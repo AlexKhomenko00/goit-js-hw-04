@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url('/img/bg.jpg');
+  background-image: url('../img/bg.jpg');
   background-size: cover;
 }
 .note {
@@ -43,7 +43,7 @@ body {
   width: 243px;
   height: 243px;
   border: 0;
-  background: url('/img/sun.png') no-repeat;
+  background: url('../img/sun.png') no-repeat;
   background-size: cover;
   cursor: pointer;
   outline-color: orange;
@@ -54,7 +54,7 @@ body {
   width: 81px;
   height: 81px;
   border: 0;
-  background: url('/img/earth.png') no-repeat;
+  background: url('../img/earth.png') no-repeat;
   background-size: cover;
   cursor: pointer;
   outline-color: blue;
