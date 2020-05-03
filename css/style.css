@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url('/img/bg.jpg');
+  background-size: cover;
+}
+.note {
+  color: white;
+  margin: 150px 0 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+.heading {
+  color: white;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  margin-bottom: 100px;
+}
+.heading__span-sun {
+  background: -webkit-linear-gradient(#f12711, #f5af19);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heading__span-earth {
+  background: -webkit-linear-gradient(#00c9ff, #92fe9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container {
+  width: 243px;
+  height: 243px;
+  margin: 0 auto 200px;
+  position: relative;
+}
+
+.Sun {
+  display: block;
+  width: 243px;
+  height: 243px;
+  border: 0;
+  background: url('/img/sun.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  outline-color: orange;
+  border-radius: 50%;
+}
+.Earth {
+  display: block;
+  width: 81px;
+  height: 81px;
+  border: 0;
+  background: url('/img/earth.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  outline-color: blue;
+  border-radius: 50%;
+  position: absolute;
+  top: -25%;
+  left: -25%;
+
+  box-shadow: 20px 20px 10px 2px #000000cc;
+  animation: rotation 4s infinite;
+}
+@keyframes rotation {
+  50% {
+    left: calc(105%);
+    top: calc(105%);
+  }
+  100% {
+    z-index: -1;
+  }
+}
